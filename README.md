@@ -7,7 +7,8 @@
 - [ ] 功能測試
 - [ ] GUI開發移植 計畫採用web方式發布(Web Serial API)
 ![./MultiwiiGUI/pic/confGUI.png](./MultiwiiGUI/pic/confGUI.png)
-- [ ] 
+- [ ] BLE遙控器控制
+- [ ] Android開發
 
 ### 已知問題
 - 官方網站已經404<https://www.multiwii.com/>
@@ -20,6 +21,8 @@
 https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 ```
 ### 參考資料
+
 https://arduino-pico.readthedocs.io/en/latest/index.html
+
 https://en.wikipedia.org/wiki/RP2040
 
