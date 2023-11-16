@@ -1,15 +1,17 @@
 # Multiwii移植Pico
 
 ### 預估進度
-- [ ] 文本翻譯
+- [ ] 文本翻譯(設置頁面已完成)
 - [ ] 不必要功能刪減(遙控器,額外兼容的設置)
 - [ ] 第一版可於Arduino-PICO編譯代碼
 - [ ] 功能測試
-- [ ] GUI開發移植
+- [ ] GUI開發移植 計畫採用web方式發布(Web Serial API)
+![./MultiwiiGUI/pic/confGUI.png](./MultiwiiGUI/pic/confGUI.png)
 - [ ] 
 
 ### 已知問題
 - 官方網站已經404
+![./pic/404.png](./pic/404.png)
 - Github代碼以年久許多要更新
 - GUI介面不兼容Win11
 
