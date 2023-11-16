@@ -1,4 +1,3 @@
-#include <avr/eeprom.h>
 #include "Arduino.h"
 #include "config.h"
 #include "def.h"

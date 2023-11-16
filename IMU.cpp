@@ -5,7 +5,27 @@
 #include "MultiWii.h"
 #include "IMU.h"
 #include "Sensors.h"
+/*
+互補濾波器（Complementary Filter）：
 
+在 getEstimatedAttitude() 函式中，使用互補濾波器結合加速度計（ACC）和陀螺儀（GYRO）的數據。這種濾波器平衡了加速度計在低頻下的穩定性和陀螺儀在高頻下的靈敏度。
+低通濾波器（Low Pass Filter, LPF）：
+
+在 ACC_LPF_FACTOR 定義中，使用低通濾波器來減少加速度計數據中的噪聲，同時增加數據的延遲時間。
+旋轉向量算法：
+
+在 rotateV32() 函式中，實現了一種基於小角度近似的旋轉向量算法，用於根據陀螺儀的數據更新估算的姿態向量。
+平方根倒數（Inverse Square Root）：
+
+在 InvSqrt() 函式中，這個算法被用來高效地計算平方根的倒數，常用於向量的歸一化和其他數學運算中。
+角度計算：
+
+使用 _atan2() 函式來計算兩個數據點之間的角度。這是一種計算方位角的常用方法。
+高度估算：
+
+在 getEstimatedAltitude() 函式中，用巴洛計（BARO）數據結合加速度計數據來估算飛行器的高度。這裡也使用了互補濾波器和低通濾波器來平滑和穩定高度數據。 
+
+ */
 void getEstimatedAttitude();
 
 void computeIMU () {
